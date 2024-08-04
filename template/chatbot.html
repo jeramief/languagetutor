@@ -98,9 +98,9 @@
 </div>
 
 <script>
-  const messageList = document.querySelector(".messages-list");
-  const messageForm = document.querySelector("message-form");
-  const messageInput = document.querySelector("message-input");
+  const messagesList = document.querySelector(".messages-list");
+  const messageForm = document.querySelector(".message-form");
+  const messageInput = document.querySelector(".message-input");
 
   messageForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -123,7 +123,7 @@
       </div>
     `;
 
-    messageList.appendChild(messageItem);
+    messagesList.appendChild(messageItem);
     messageInput.value = "";
 
     fetch("", {
@@ -152,7 +152,7 @@
           </div>
         </div>
       `;
-        messageList.appendChild(messageItem);
+        messagesList.appendChild(messageItem);
       });
   });
 </script>
